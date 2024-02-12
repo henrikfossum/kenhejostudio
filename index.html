@@ -1,0 +1,144 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- passer på at skaleringen blir riktig på tlf, laptop tablet-->
+        <title>Kenhejo Studios</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            #banner-top {
+                background-color: #112233;
+                color: #fff;
+                text-align: center;
+                padding: 1px 0;
+            }
+            #banner-middle {
+                background-image: url('banner.jpeg');
+                background-size: cover;
+                background-position: center;
+                height: 350px; 
+                position: relative;
+                
+            }
+            #bt-logo {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 150px;
+                width: 400px;
+            }
+            #play-button {
+                background-color: #3CB371;
+                border: none;
+                border-radius: 7px;
+                position: absolute;
+                font-size: 30px;
+                color: white;
+                top: 75%;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 50px;
+                width: 190px;
+            }
+
+            #play-button:hover{
+                opacity: 0.8;
+            }
+            
+            a img{
+                width: auto; /*logoene er ikke like brede så lar nettleseren tilpasse den ved å bruke den originale ratioen til bildet*/
+                height: 25px;
+            }
+            #hoyre a{
+                margin: 10px; /*mellomrom mellom logoene*/
+                text-decoration: none; /*fjerner lilla strek pga link mellom logoene (den fjerne underlining for linkene da*/
+            }
+            a img:hover{
+                opacity: 0.4;
+            }
+            #content {
+                background-color: white;
+                padding: 50px 0;
+                text-align: center;
+            }
+            #content img {
+                max-width: 48%;
+                margin: 0 2%;
+            }
+            #container {
+                display: flex; /*oppretter en flexboks*/
+                flex-direction: row; /*legger boksene horisontalt*/
+                justify-content: center; /*sentrer boksene i senter*/
+                background-color: #112233;
+            }
+
+            .half-container {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+            }
+
+            #venstre, #hoyre {
+                padding: 20px;
+                color: white;
+            }
+            #footer {
+                background-color: #112233;
+                color: #fff;
+                text-align: center;
+                padding: 5px 0; 
+            }
+            #play-button {
+                cursor: pointer;
+            }
+                    
+            
+        </style>
+    </head>
+    <body>
+        <div id="banner-top">
+            <h1>Kenhejo Studios</h1>
+        </div>
+        <div id="banner-middle">
+            <img id="bt-logo" src="San_Tanoshi_2.0.png" alt="Game Logo">
+            <a href="https://www.roblox.com/games/1142593143/USA-Meeting" target="_blank">
+                <button id ="play-button" type = "button">Play</button>
+                </a>
+        </div>
+        <div id="content">
+            <img src="tba.png" alt="Image 1">
+            <img src="tba.png" alt="Image 2">
+        </div>
+        <div id="container">
+            <div class="half-container">
+                <div id="venstre">
+                    <h2>Contact</h2>
+                    <p>support@kenhejostudios.no</p>
+                </div>
+            </div>
+            <div class="half-container">
+                <div id="hoyre">
+                    <h2>Social media</h2>
+                    <a href="https://www.instagram.com/kenhejostudio/" target="_blank"><!--target blank åpner den i en annen fane*/-->
+                        <img src="insta_logo.png" alt="Instagram link">
+                    </a>
+                    <a href="https://www.instagram.com/kenhejostudio/" target="_blank">
+                        <img src="x.png" alt="X link">
+                    </a>
+                    <a href="https://www.instagram.com/kenhejostudio/" target="_blank">
+                        <img src="youtube.png" alt="Youtube link">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>2023 Kenhejo Studios. All rights reserved.</p>
+        </div>
+    </body>
+    </html>
